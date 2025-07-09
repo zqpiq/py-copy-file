@@ -1,6 +1,5 @@
 def copy_file(command: str) -> None:
     try:
-        commands = command.split()
         command_cd, file_txt, new_file = command.split()
     except IndexError:
         return
