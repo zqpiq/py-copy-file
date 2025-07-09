@@ -1,7 +1,7 @@
 def copy_file(command: str) -> None:
     try:
         command_cd, file_txt, new_file = command.split()
-    except IndexError:
+    except ValueError:
         return
 
     if file_txt == new_file or command_cd != "cp":
